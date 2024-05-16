@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Calendrier</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-primary font-classique px-10 md:px-20">
+    <article class="m-auto">
+        <header class="container mx-auto relative">
+            <div class="flex justify-center">
+                <h1 class="font-rondeur text-title text-2xl md:text-6xl text-center m-8 w-1/2 font-bold">Calendrier
+                    Éléphant Rose</h1>
+            </div>
+            <nav class="absolute w-full flex justify-evenly px-3">
+                <a href="#" class="text-3xl z-20 w-10 md:hidden" id="menuBtn">
+                    <img src="../Images_accueil/burger-bar.png" alt="Icone du menu burger">
+                </a>
+                <div class="hidden text-xl lg:flex gap-x-36">
+                    <button
+                        class="bg-secondary p-2 rounded-full shadow-md shadow-title hover:bg-buttonhover w-42 h-12 text-xs lg:text-sm xl:text-base"><a
+                            href="../index.html">Accueil</a></button>
+                    <button
+                        class="bg-secondary p-2 rounded-full shadow-md shadow-title hover:bg-buttonhover w-42 h-12 text-xs lg:text-sm xl:text-base"><a
+                            href="../notre-equipe.html">Notre équipe</a></button>
+                    <button
+                        class="bg-secondary p-2 rounded-full shadow-md shadow-title hover:bg-buttonhover w-42 h-12 text-xs lg:text-sm xl:text-base"><a
+                            href="../catalog.html">Boutique</a></button>
+                    <button
+                        class="bg-secondary p-2 rounded-full shadow-md shadow-title hover:bg-buttonhover w-42 h-12 text-xs lg:text-sm xl:text-base"><a
+                            href="../partenaires.html">Nos Partenaires</a></button>
+                    <button
+                        class="bg-secondary p-2 rounded-full shadow-md shadow-title hover:bg-buttonhover w-42 h-12 text-xs lg:text-sm xl:text-base"><a
+                            href="../contact.html">Contact</a></button>
+                </div>
+            </nav>
+            <div class="absolute container h-screen bg-gray-400/80 flex flex-col items-center justify-center text-6xl text-title font-rondeur gap-y-7 z-10 scale-x-0 duration-200 origin-left md:hidden"
+                id="menu">
+                <a href="../index.html">Accueil</a>
+                <a href="../notre-equipe.html">Notre équipe</a>
+                <a href="../catalog.html">Boutique</a>
+                <a href="../partenaires.html">Nos Partenaires</a>
+                <a href="../contact.html">Contact</a>
+            </div>
+        </header>
+        <div class="flex flex-col lg:flex-row w-10/12 m-auto mt-16">
+            <div class="m-auto lg:w-1/4 ">
+                <img class="w-[70vw] md:w-96" src="../Images_produits/calendar-elephant-rose.jpg"
+                    alt="Image d'un calendrier d'éléphant rose">
+            </div>
+            <div class="flex flex-col items-center m-6 w-3/4">
+                <div class="flex flex-col items-center">
+                    <p class="text-2xl text-center lg:p-8 font-bold">Calendrier 2024 consacré aux éléphants roses :</p>
+                    <p class="text-2xl">22,95€</p>
+                </div>
+                <div class="mt-8 flex flex-col">
+                    <div class="flex justify-center mb-8">
+                        <label class="text-base lg:text-3xl mr-2" for="quantité">Quantité</label>
+                        <input class="h-8 w-24" type="number" name="nombrePeluche" id="nbpeluche"
+                            placeholder="Nombre souhaité" min="1">
+                        <button
+                            class="bg-red-400 rounded text-sm lg:text-base lg:w-32 lg:ml-2 h-8 w-28 border-solid border-black ml-1"
+                            type="submit">Ajouter au panier</button>
+                    </div>
+                    <p class="w-3/4 m-auto ">Préparez-vous pour une année enchantée avec notre calendrier 2024
+                        d'éléphant rose. Chaque mois, découvrez une illustration adorable d'éléphants roses qui
+                        apportera une touche de joie et de couleur à votre quotidien. Parfait pour organiser vos
+                        rendez-vous et événements, ce calendrier pratique et esthétique est un ajout charmant à
+                        n'importe quel espace, que ce soit au bureau ou à la maison. Faites de 2024 une année pleine de
+                        douceur et de style avec ce calendrier unique.</p>
+                </div>
+            </div>
+        </div>
+        <div class="w-4/5 m-auto">
+
+        </div>
+
+    </article>
+    <footer class="italic text-center mt-52">
+        <p>Tous produits ou service en vente sur ce site auront leur bénéfice intégralement reversé à l'association pour
+            préserver ces charmantes créatures un poil encombrantes.</p>
+    </footer>
+    <script src="../burger.js"></script>
+    <script src="../tailwindconfig.js"></script>
+</body>
+
+</html>

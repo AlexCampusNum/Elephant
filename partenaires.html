@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Nos partenaires</title>
+</head>
+
+<body class="bg-primary font-classique px-10 md:px-20">
+  <header class="container mx-auto relative">
+    <div class="flex justify-center">
+      <h1 class="font-rondeur text-title text-6xl text-center m-8 w-1/2 font-bold">
+        Nos Partenaires
+      </h1>
+    </div>
+    <nav class="w-full flex justify-evenly px-3 mb-20">
+      <a href="#" class="text-3xl z-20 w-10 md:hidden" id="menuBtn">
+        <img src="./Images_accueil/burger-bar.png" alt="Icone du menu burger" />
+      </a>
+      <div class="hidden text-xl md:flex gap-x-36">
+        <button
+          class="bg-secondary p-2 rounded-full shadow-md shadow-title hover:bg-buttonhover w-42 h-12 text-xs lg:text-sm xl:text-base">
+          <a href="./index.html">Accueil</a>
+        </button>
+        <button
+          class="bg-secondary p-2 rounded-full shadow-md shadow-title hover:bg-buttonhover w-42 h-12 text-xs lg:text-sm xl:text-base">
+          <a href="./notre-equipe.html">Notre équipe</a>
+        </button>
+        <button
+          class="bg-secondary p-2 rounded-full shadow-md shadow-title hover:bg-buttonhover w-42 h-12 text-xs lg:text-sm xl:text-base">
+          <a href="./catalog.html">Boutique</a>
+        </button>
+        <button
+          class="bg-secondary p-2 rounded-full shadow-md shadow-title hover:bg-buttonhover w-42 h-12 text-xs lg:text-sm xl:text-base">
+          <a href="./partenaires.html">Nos Partenaires</a>
+        </button>
+        <button
+          class="bg-secondary p-2 rounded-full shadow-md shadow-title hover:bg-buttonhover w-42 h-12 text-xs lg:text-sm xl:text-base">
+          <a href="./contact.html">Contact</a>
+        </button>
+      </div>
+    </nav>
+    <div
+      class="absolute container h-screen bg-gray-400/80 flex flex-col items-center justify-center text-6xl text-title font-rondeur gap-y-7 z-10 scale-x-0 duration-200 origin-left md:hidden"
+      id="menu">
+      <a href="./index.html">Accueil</a>
+      <a href="./notre-equipe.html">A propos</a>
+      <a href="./catalog.html">Boutique</a>
+      <a href="./partenaires.html">Nos Partenaires</a>
+      <a href="./contact.html">Contact</a>
+    </div>
+    <!-- gap-y-[2vh] -->
+    <article class="mt-[5vh]">
+      <div class="flex flex-col lg:flex-row items-center justify-around">
+        <a class="size-[10vw]" href="https://www.wwf.fr/" target="_blank"><img class="w-[10vw] ml-[1vh] rounded-full"
+            src="./Images_accueil/logo-WWF.jpg" alt="Logo de la WWF" /></a>
+        <p class="w-[30vw]">
+          La WWF nous a accompagné depuis toujours, principalement pour le
+          transport des éléphants rose de l'Afrique, de l'Amazonie et du pôle
+          nord. Ils ont été là à chaque étape pour nous permettre d'organiser la
+          grotte sous Chavant pour leur aménager des petits lits douillets. Un
+          grand merci à eux.
+        </p>
+      </div>
+      <div class="flex flex-col lg:flex-row items-center justify-around mt-5">
+        <a class="size-[10vw]" href="https://www.delirium.be/fr" target="_blank"><img
+            class="w-[10vw] ml-[1vh] rounded-full" src="./Images_accueil/delirium-logo.jpg"
+            alt="Logo de délirium" /></a>
+        <p class="w-[30vw]">
+          Delirium nous a contacté suite à la création de leur marque pour
+          pouvoir utiliser Ernest comme mascotte. Depuis cette collaboration
+          initiée avec eux, Ernest reçoit 5 kg de cacahuètes pour chaque cagette
+          de bouteilles de Delirium vendue.
+        </p>
+      </div>
+      <div class="flex flex-col lg:flex-row items-center justify-around mt-5">
+        <a class="size-[10vw]" href="https://www.auvergnerhonealpes.fr/" target="_blank"><img
+            class="w-[10vw] ml-[1vh] rounded-full"
+            src="./Images_accueil/Region-auvergne-rhone-alpes-branding.jpg" alt="Logo de la Région AURA" /></a>
+        <p class="w-[30vw]">
+          La région nous a contacté car ils souhaitaient intégrer des éléphants
+          dans le Vercors. Néanmoins, s'agissant d'une espèce proptégé nous
+          avons dû prendre quelques mesure préventive et faire des essaies avant
+          de pouvoir accepté. Les essaies sont encore en cours mais vous verrez
+          probablement bientôt des éléphants rose dans le Vercors.
+        </p>
+      </div>
+      <div class="flex flex-col lg:flex-row items-center justify-around mt-5">
+        <a class="size-[10vw]" href="https://www.youtube.com/watch?v=ZcvmylmWvtY&ab_channel=AlexChamoux"
+          alt="video d'éléphant park" target="_blank"><img class="w-[10vw] ml-[1vh]"
+            src="./Images_accueil/logo_elephant_park.png" alt="Logo de Elephant Park" /></a>
+        <p class="w-[30vw]">
+          Nos éléphants font réguliérement des tournées au parc d'attraction
+          Elephant Park, pour que le public puisse profiter de ces magnifiques
+          animaux hauts en couleur! Cliquez sur le logo d'Elephant Park pour une
+          visite virtuelle.
+        </p>
+      </div>
+    </article>
+    <script src="./burger.js"></script>
+    <script src="./tailwindconfig.js"></script>
+</body>
+
+</html>

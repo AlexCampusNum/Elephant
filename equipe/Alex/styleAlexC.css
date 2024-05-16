@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    width: 85vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    @media screen and (max-width: 525px) {
+        .photo{
+            width: 20vw;
+            border-radius: 50%;
+        }
+        /* header{
+            margin-top: 2vh;
+        } */
+
+        .right{
+            margin-left: 3vw;
+        }
+
+        table{
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 526px) and (max-width: 1024px){
+        .photo{
+            width: 10vw;
+            border-radius: 50%;
+        }
+
+        .title{
+            text-shadow: #FFF 2px 2px ;
+        }
+        header{
+            background-color: cadetblue;
+            height: 25vh;
+            /* margin-top: 6vh; */
+        }
+
+        .cont-head{
+            align-items: center;
+        }
+
+        .text{
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row-reverse;
+        }
+
+        .right{
+            margin-left: 15vw;
+        }
+
+    }
+
+    @media screen and (min-width: 1025px){
+        .photo{
+            width: 10vw;
+            border-radius: 50%;
+        }
+        header{
+            background-color: cadetblue;
+            height: 25vh;
+            /* margin-top: 6vh; */
+        }
+
+        .cont-head{
+            align-items: center;
+        }
+
+        .text{
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row-reverse;
+        }
+
+        .right{
+            margin-left: 15vw;
+        }    
+
+    }
+
+
+
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.left{
+    margin-left: 3vw;
+}
+
+.title{
+    text-shadow: #FFF 2px 2px ;
+}
+
+.without{
+    list-style-type: none;
+}
+
+.without li{
+    margin-top: 2vh;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.red{
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: grey 2px 5px ;
+}
+
+.green{
+    color: green;
+    font-family: fantasy;
+    text-shadow: grey 2px 5px ;
+}
+
+.blue{
+    color:blue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: grey 2px 5px ;
+}
+
+.cyan{
+    background-color: cyan;
+}
+
+.yellow{
+    background-color: yellow;
+    width: 85vw;
+}
+
+.form{
+    margin: 1vw;
+    padding: 2vw;
+    border: solid;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.frame{
+    width: 28vw;
+    height: 15.75vw;
+}
+
+table{
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    width:50%;
+}
+
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+}

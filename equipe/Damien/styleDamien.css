@@ -1,0 +1,40 @@
+/* A propos */
+
+.photoProfil:hover{
+    transform: scale(1.25);
+}
+
+.photoProfil{
+    width: 10rem;
+}
+
+#equipe{
+  display: flex;
+  justify-content: space-around;
+}
+
+.portrait{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2{
+  font-family: "roboto";
+
+}
+h1{
+  text-align: center;
+  font-family: "poetsen one" ;
+  color: #9c6264;
+  font-size: 4rem;
+}
+
+body{
+  background-color:#F1C6C7;
+  padding: 5rem;
+  font-family: "roboto";
+}
+#presentation{
+  margin-top: 5rem;
+}

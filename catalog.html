@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Catalog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-primary font-classique">
+    <article>
+        <header class="container mx-auto relative">
+            <div class="flex justify-center">
+                <h1 class="font-rondeur text-title text-6xl text-center m-8 w-1/2 font-bold">Boutique des Goodies
+                    Éléphant Rose</h1>
+            </div>
+            <nav class="absolute w-full flex justify-evenly px-3">
+                <a href="#" class="text-3xl z-20 w-10 lg:hidden" id="menuBtn">
+                    <img src="./Images_accueil/burger-bar.png" alt="Icone du menu burger">
+                </a>
+                <div class="hidden text-xl lg:flex gap-x-36">
+                    <button
+                        class="bg-secondary p-2 rounded-full shadow-md shadow-title hover:bg-boutonhover w-42 h-12 text-xs lg:text-base"><a
+                            href="./index.html">Accueil</a></button>
+                    <button
+                        class="bg-secondary p-2 rounded-full shadow-md shadow-title hover:bg-boutonhover w-42 h-12 text-xs lg:text-base"><a
+                            href="./notre-equipe.html">Notre équipe</a></button>
+                    <button
+                        class="bg-secondary p-2 rounded-full shadow-md shadow-title hover:bg-boutonhover w-42 h-12 text-xs lg:text-base"><a
+                            href="./catalog.html">Boutique</a></button>
+                    <button
+                        class="bg-secondary p-2 rounded-full shadow-md shadow-title hover:bg-boutonhover w-42 h-12 text-xs lg:text-base"><a
+                            href="./partenaires.html">Nos Partenaires</a></button>
+                    <button
+                        class="bg-secondary p-2 rounded-full shadow-md shadow-title hover:bg-boutonhover w-42 h-12 text-xs lg:text-base"><a
+                            href="./contact.html">Contact</a></button>
+                </div>
+            </nav>
+            <div class="absolute container h-screen bg-gray-400/80 flex flex-col items-center justify-center text-6xl text-title font-rondeur gap-y-7 z-10 scale-x-0 duration-200 origin-left md:hidden"
+                id="menu">
+                <a href="./index.html">Accueil</a>
+                <a href="./notre-equipe.html">A propos</a>
+                <a href="./Catalogue/catalog.html">Boutique</a>
+                <a href="./partenaires.html"> Nos Partenaires</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+        </header>
+        <div class="flex flex-col md:flex-row items-center flex-wrap justify-between w-11/12 m-auto mt-20">
+            <a href="./Produits/ticket.html">
+                <div class="w-80 h-96 m-8 p-9 bg-secondary text-center shadow-md shadow-title hover:scale-125">
+                    <div class="flex-col">
+                        <h3 class="bg-gray-200">Pour 2 tickets de cinéma achetés, 1 Visite de la Grotte des Éléphants
+                            OFFERTE</h3>
+                        <img class="m-8" src="./Images_produits/Tickets-cine.jpg" alt="Tickets de cinéma">
+                        <div class="flex justify-center ml-2">
+                            <p class="mt-2 bg-gray-200">Prix : 30€</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="./Produits/peluche.html">
+                <div class="w-80 h-96 m-8 p-9 bg-secondary text-center shadow-md shadow-title hover:scale-125">
+                    <div class="flex-col">
+                        <h3 class="bg-gray-200">Peluche Éléphant Rose</h3>
+                        <img class="mt-2" src="./Images_produits/peluche-elephant-rose.png"
+                            alt="Peluche d'éléphant rose">
+                        <div class="flex justify-center ml-2">
+                            <p class="mt-2 bg-gray-200">Prix : 25€</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="./Produits/tee-shirt.html">
+                <div class="w-80 h-96 m-8 p-9 bg-secondary text-center shadow-md shadow-title hover:scale-125">
+                    <div class="flex-col">
+                        <h3 class="bg-gray-200">T-shirt Éléphant Rose</h3>
+                        <img class="mt-2" src="./Images_produits/tee-shirt-elephant-rose.jpg"
+                            alt="Tee-shirt d'éléphant rose">
+                        <div class="flex justify-center ml-2">
+                            <p class="mt-2 bg-gray-200">Prix : 35€</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="./Produits/lampe.html">
+                <div class="w-80 h-96 m-8 p-9 bg-secondary text-center shadow-md shadow-title hover:scale-125">
+                    <div class="flex-col">
+                        <h3 class="bg-gray-200">Lampe Éléphant Rose</h3>
+                        <img class="mt-2" src="./Images_produits/Lampe-de-Bureau-elephant-Rose.jpg"
+                            alt="Lampe éléphant rose">
+                        <div class="flex justify-center ml-2">
+                            <p class="mt-2 bg-gray-200">Prix : 45€</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="./Produits/casquette.html">
+                <div class="w-80 h-96 m-8 p-9 bg-secondary text-center shadow-md shadow-title hover:scale-125">
+                    <div class="flex-col">
+                        <h3 class="bg-gray-200">Casquette Éléphant Rose</h3>
+                        <img class="mt-2" src="./Images_produits/casquette_elephant_rose.jpg"
+                            alt="Casquette éléphant rose">
+                        <div class="flex justify-center ml-2">
+                            <p class="mt-2 bg-gray-200">Prix : 19,99€</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="./Produits/derouleur.html">
+                <div class="w-80 h-96 m-8 p-9 bg-secondary text-center shadow-md shadow-title hover:scale-125">
+                    <div class="flex-col">
+                        <h3 class="bg-gray-200">Dérouleur de Papier toilette Éléphant Rose</h3>
+                        <img class="mt-4 m-auto w-52" src="./Images_produits/dérouleur-pq-elephant-rose.jpg"
+                            alt="Dérouleur de papier éléphant rose">
+                        <div class="flex justify-center ml-2">
+                            <p class="mt-4 bg-gray-200">Prix : 75€</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="./Produits/calendrier.html">
+                <div class="w-80 h-96 m-8 p-9 bg-secondary text-center shadow-md shadow-title hover:scale-125">
+                    <div class="flex-col">
+                        <h3 class="bg-gray-200">Calendrier 2024 Éléphant Rose</h3>
+                        <img class="mt-2" src="./Images_produits/calendar-elephant-rose.jpg"
+                            alt="Calendrier éléphant rose">
+                        <div class="flex justify-center ml-2">
+                            <p class="mt-2 bg-gray-200">Prix : 22,95€</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="./Produits/infuseur.html">
+                <div class="w-80 h-96 m-8 p-9 bg-secondary text-center shadow-md shadow-title hover:scale-125">
+                    <div class="flex-col">
+                        <h3 class="bg-gray-200">Infuseur Éléphant Rose</h3>
+                        <img class="mt-2" src="./Images_produits/Boule-a-the-Elephant-Rose.jpg"
+                            alt="Infuseur éléphant rose">
+                        <div class="flex justify-center ml-2">
+                            <p class="mt-2 bg-gray-200">Prix : 17€</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </article>
+    <footer class="italic text-center">Tous produits ou service en vente sur ce site auront leur bénéfice intégralement
+        reversé à l'association pour préserver ces charmantes créatures un poil encombrantes.</footer>
+
+    <script src="./burger.js"></script>
+    <script src="./tailwindconfig.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contactez-nous !</title>
+</head>
+
+<body class="bg-primary font-classique px-10 md:px-20">
+    <header class="container mx-auto relative">
+        <div class="flex justify-center">
+            <h1 class="font-rondeur text-title text-6xl text-center m-8 w-1/2 font-bold">Nous contacter</h1>
+        </div>
+        <nav class="absolute w-full flex justify-evenly px-3">
+            <a href="#" class="text-3xl z-20 w-10 md:hidden" id="menuBtn">
+                <img src="./Images_accueil/burger-bar.png" alt="Icone du menu burger">
+            </a>
+            <div class="hidden text-xl md:flex gap-x-36">
+                <button
+                    class="bg-secondary p-2 rounded-full shadow-md shadow-title hover:bg-buttonhover w-42 h-12 text-xs lg:text-base"><a
+                        href="./index.html">Accueil</a></button>
+                <button
+                    class="bg-secondary p-2 rounded-full shadow-md shadow-title hover:bg-buttonhover w-42 h-12 text-xs lg:text-base"><a
+                        href="./notre-equipe.html">Notre équipe</a></button>
+                <button
+                    class="bg-secondary p-2 rounded-full shadow-md shadow-title hover:bg-buttonhover w-42 h-12 text-xs lg:text-base"><a
+                        href="./catalog.html">Boutique</a></button>
+                <button
+                    class="bg-secondary p-2 rounded-full shadow-md shadow-title hover:bg-buttonhover w-42 h-12 text-xs lg:text-base"><a
+                        href="./partenaires.html">Nos Partenaires</a></button>
+                <button
+                    class="bg-secondary p-2 rounded-full shadow-md shadow-title hover:bg-buttonhover w-42 h-12 text-xs lg:text-base"><a
+                        href="./contact.html">Contact</a></button>
+            </div>
+        </nav>
+        <div class="absolute container h-screen bg-gray-400/80 flex flex-col items-center justify-center text-6xl text-title gap-y-7 z-10 scale-x-0 duration-200 origin-left md:hidden"
+            id="menu">
+            <a href="./index.html">Accueil</a>
+            <a href="./notre-equipe.html">Notre équipe</a>
+            <a href="./Catalogue/catalog.html">Boutique</a>
+            <a href="./partenaires.html">Nos Partenaires</a>
+            <a href="./contact.html">Contact</a>
+        </div>
+    </header>
+
+    <div class="mt-20">
+        <br>Bienvenue sur la page de contact de l'association Eléphant Rose !</p>
+        <br>Que vous soyez une entreprise cherchant à soutenir une cause qui vous tient à cœur, un
+        particulier souhaitant en savoir plus sur nos actions, ou tout simplement
+        quelqu'un désireux de contribuer à notre mission, nous sommes ravis de vous accueillir ici.
+        <br>Votre soutien, qu'il soit financier, en nature ou simplement moral, est précieux pour
+        nous et contribue directement à faire avancer notre cause.</p>
+        <br>Merci de votre intérêt pour l'association Eléphant Rose. Nous avons hâte de vous entendre
+        et de collaborer avec vous pour un avenir meilleur.</p>
+    </div>
+
+    <h2 class="text-lg mt-8 mb-6 text-center">Formulaire en ligne</h2>
+    <form class="text-center flex flex-col items-center" action="https://httpbin.org/post" method="post">
+        <label for="name">Votre nom</label>
+        <input class="w-[20vw] border border-solid border-black" type="text" id="name" placeholder="Babar" required>
+        <label for="email">Votre adresse e-mail</label>
+        <input class="w-[20vw] border border-solid border-black" type="email" id="email" size="30"
+            placeholder="babar@minitel.fr" required>
+        <label for="tel">Votre numéro de téléphone</label>
+        <input class="w-[20vw] border border-solid border-black" type="number" placeholder="8888888888" required>
+        <label for="message">Votre message</label>
+        <textarea class="border border-black border-solid h-20 mt-1 w-[50vw] h-[20vh]" name="message" id="message"
+            rows="20" cols="100" placeholder="Les éléphants rose sont les plus beaux ! <3" required></textarea>
+        <input class="mt-2 bg-secondary p-2 rounded-full shadow-md shadow-title hover:bg-buttonhover active:bg-[c9184a]"
+            type="submit" value="Hop!">
+    </form>
+
+    <div class="mt-10">
+        <h2 class="font-rondeur text-2xl text-title mt-8 mb-6 text-center"">Nos coordonnées</h2>
+        <p class=" text-center font-bold">Lieu dit la Grotte sous Chavant
+            <br>BP 452256
+            <br>38000 Grenoble</p>
+    </div>
+
+    <h2 class="font-rondeur text-title text-2xl mt-8 mb-6 text-center">Nous faire un don</h2>
+    <form class="text-center" action="https://httpbin.org/post" method="post">
+        <input class="border border-solid border-black" type="number" id="montant" name="montant" min="5" step="5"
+            placeholder="10 000€" required>
+        <legend class="mt-4 mb-2">Vous êtes</legend>
+        <label for="particulier">Un particulier</label>
+        <input type="radio" id="particulier" name="typeDonateur" value="particulier">
+        <label for="entreprise">Une entreprise</label>
+        <input type="radio" id="entreprise" name="typeDonateur" value="entreprise">
+        <input class="bg-secondary p-2 rounded-full shadow-md shadow-title hover:bg-buttonhover" type="submit"
+            value="Envoyer mon don">
+
+    </form>
+    <script src="./burger.js"></script>
+    <script src="./tailwindconfig.js"></script>
+</body>
+
+</html>

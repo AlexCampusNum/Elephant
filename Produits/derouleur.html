@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Dérouleur</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-primary font-classique px-10 md:px-20">
+    <article>
+        <header class="container mx-auto relative">
+            <div class="flex justify-center">
+                <h1 class="font-rondeur text-title text-6xl text-center m-8 lg:w-1/2 font-bold">Dérouleur Éléphant Rose
+                </h1>
+            </div>
+            <nav class="absolute w-full flex justify-evenly px-3">
+                <a href="#" class="text-3xl z-20 w-10 md:hidden" id="menuBtn">
+                    <img src="../Images_accueil/burger-bar.png" alt="Icone du menu burger">
+                </a>
+                <div class="hidden text-xl md:flex gap-x-36">
+                    <button
+                        class="bg-secondary p-2 rounded-full shadow-md shadow-title hover:bg-buttonhover w-42 h-12 text-xs lg:text-sm xl:text-base"><a
+                            href="../index.html">Accueil</a></button>
+                    <button
+                        class="bg-secondary p-2 rounded-full shadow-md shadow-title hover:bg-buttonhover w-42 h-12 text-xs lg:text-sm xl:text-base"><a
+                            href="../notre-equipe.html">Notre équipe</a></button>
+                    <button
+                        class="bg-secondary p-2 rounded-full shadow-md shadow-title hover:bg-buttonhover w-42 h-12 text-xs lg:text-sm xl:text-base"><a
+                            href="../catalog.html">Boutique</a></button>
+                    <button
+                        class="bg-secondary p-2 rounded-full shadow-md shadow-title hover:bg-boutonhover w-42 h-12 text-xs lg:text-sm xl:text-base"><a
+                            href="../partenaires.html">Nos Partenaires</a></button>
+                    <button
+                        class="bg-secondary p-2 rounded-full shadow-md shadow-title hover:bg-buttonhover w-42 h-12 text-xs lg:text-sm xl:text-base"><a
+                            href="../contact.html">Contact</a></button>
+                </div>
+            </nav>
+            <div class="absolute container h-screen bg-gray-400/80 flex flex-col items-center justify-center text-6xl text-title font-rondeur gap-y-7 z-10 scale-x-0 duration-200 origin-left md:hidden"
+                id="menu">
+                <a href="../index.html">Accueil</a>
+                <a href="../notre-equipe.html">Notre équipe</a>
+                <a href="../catalog.html">Boutique</a>
+                <a href="../partenaires.html">Nos Partenaires</a>
+                <a href="../contact.html">Contact</a>
+            </div>
+        </header>
+        <div class="flex flex-col lg:flex-row w-10/12 m-auto mt-16">
+            <div class="m-auto w-80       lg:m-6 w-1/4">
+                <img src="../Images_produits/dérouleur-pq-elephant-rose.jpg"
+                    alt="Image de dérouleur de papier toilette d'éléphant rose">
+            </div>
+            <div class="flex flex-col items-center m-6 lg:w-3/4">
+                <div class="flex flex-col items-center w-full">
+                    <p class="text-base lg:text-2xl lg:p-8 font-bold">C'est le produit phare de notre boutique, il est
+                        au prix exceptionnel de :</p>
+                    <p class="text-base lg:text-2xl">75€ au lieu de <span class="line-through">225€</span></p>
+                </div>
+                <div class="mt-8 flex flex-col">
+                    <div class="flex justify-center mb-8">
+                        <label class="text-base lg:text-3xl mr-2" for="quantité">Quantité</label>
+                        <input class="h-8 w-24 lg:h-full lg:w-[10vw]" type="number" name="nombrePeluche" id="nbpeluche"
+                            placeholder="Nombre souhaité" min="1">
+                        <button
+                            class="text-sm lg:text-base bg-red-400 h-8 w-28 lg:w-[14vw] xl:w-[11vw] 2xl:w-[9vw] rounded lg:p-2 border-solid border-black ml-4"
+                            type="submit">Ajouter au panier</button>
+                    </div>
+                    <p class="lg:w-3/4 m-auto ">Ajoutez une touche de fantaisie à vos toilettes avec notre dérouleur de
+                        papier toilette en forme d'éléphant rose. Cet accessoire adorable et pratique ne manquera pas de
+                        faire sourire vos invités tout en gardant votre papier toilette à portée de main. Conçu avec des
+                        matériaux durables et de qualité, ce dérouleur combine fonctionnalité et charme, apportant une
+                        ambiance joyeuse et originale à votre espace. Transformez vos WC avec cet éléphant rose aussi
+                        mignon qu'utile.</p>
+                </div>
+            </div>
+        </div>
+        <div class="w-4/5 m-auto">
+
+        </div>
+
+    </article>
+    <footer class="italic text-center mt-52">
+        <p>Tous produits ou service en vente sur ce site auront leur bénéfice intégralement reversé à l'association pour
+            préserver ces charmantes créatures un poil encombrantes.</p>
+    </footer>
+    <script src="../burger.js"></script>
+    <script src="../tailwindconfig.js"></script>
+</body>
+
+</html>
